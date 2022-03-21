@@ -83,9 +83,9 @@ function Register() {
                     <div className="nav-top w-100">
                         <a href="/">
                         <img
-              height={90}
-              className="mx-auto"
-              width="auto"
+             height={60}
+             className="mx-auto"
+             width="90%"
               src="assets/images/logo/logo1.png"
               alt="HH"
             /> 
@@ -96,10 +96,8 @@ function Register() {
                         {/* <a href="/register" className="header-btn d-none d-lg-block bg-current fw-500 text-white font-xsss p-3 ms-2 w100 text-center lh-20 rounded-xl">Connect Wallet</a> */}
                     </div>
                 </div>
-                <div className="row mt-3">
-                    <div className="col-xl-5 d-none d-xl-block p-0 vh-100 bg-image-cover bg-no-repeat"
-                        style={{ backgroundImage: `url("http://sociala.uitheme.net/assets/images/login-bg-2.jpg")` }}></div>
-                    <div style={{marginTop:'50px'}} className="col-xl-7 theme-dark-bg vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
+                <div className="row theme-dark-bg"> 
+                    <div style={{marginTop:'50px'}} className="col-xl-8 theme-dark-bg mx-auto vh-100  align-items-center d-flex bg-white rounded-3 overflow-hidden">
                         <div  className="card shadow-none border-0 ms-auto me-auto login-card">
                             <div className="card-body rounded-0 text-left">
                                 <h2 className="fw-700 display1-size display2-md-size mb-4">Create Profile</h2>

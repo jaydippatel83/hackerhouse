@@ -50,9 +50,9 @@ function Forgot() {
                         <a href="/">
 
                         <img
-              height={90}
-              className="mx-auto"
-              width="auto"
+             height={60}
+             className="mx-auto"
+             width="90%"
               src="assets/images/logo/logo1.png"
               alt="HH"
             /> 
@@ -65,11 +65,8 @@ function Forgot() {
                 </div>
 
 
-                <div className="row">
-                    <div className="col-xl-5 d-none d-xl-block p-0 vh-100 bg-image-cover bg-no-repeat"
-                        style={{ backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/social-network-app-a53f8.appspot.com/o/MicrosoftTeams-image%20(8).png?alt=media&token=49d5dc49-eb88-41a6-945e-823eded89cea")` }}></div>
-
-                    <div className="col-xl-7 theme-dark-bg vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
+                <div className="row theme-dark-bg"> 
+                    <div style={{marginTop:'50px'}} className="col-xl-8 theme-dark-bg mx-auto vh-100  align-items-center d-flex bg-white rounded-3 overflow-hidden">
                         <div className="card shadow-none border-0 ms-auto me-auto login-card">
                             <div className="card-body rounded-0 text-left">
                                 <h2 className="fw-700 display1-size display2-md-size mb-4">Change <br />your password</h2>

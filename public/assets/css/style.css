@@ -248,8 +248,8 @@
 .bg-primary-gradiant {
   background: linear-gradient(
     135deg,
-    var(--theme-color),
-    var(--theme-color-shade)
+    #D82148,
+    #D82148
   ) !important;
 }
 
@@ -1479,7 +1479,7 @@
   background-color: #1a2236 !important;
 }
 .theme-dark .theme-light-bg {
-  background-color: #132977 !important;
+  background-color: #000 !important;
 }
 .theme-dark .theme-white-bg {
   background-color: #eee !important;

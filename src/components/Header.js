@@ -73,9 +73,9 @@ function Header() {
         <Link to="/">
           
             <img
-              height={90}
+              height={60}
               className="mx-auto"
-              width="auto"
+              width="90%"
               src="assets/images/logo/logo1.png"
               alt="HH"
             /> 

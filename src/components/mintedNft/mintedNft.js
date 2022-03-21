@@ -21,11 +21,9 @@ function MintedNft() {
 
     const covalent = Moralis.Plugins.covalent;
     async function getMintedNft() { 
-        const ids = [...tokenid];
-        const result = await covalent.getNftTokenIdForContract({
-            chainId: 80001,
-            contractAddress: tokenAddres,
-        })
+        const ids = [...tokenid]; 
+        const result = await axios.get(`https://api.covalenthq.com/v1/1666700000/tokens/${tokenAddres}/transactions_v2/?key=ckey_d6812b57760b43418ee399bdf1d`); 
+        console.log(result);
         const dd = result.data.items && result.data.items.map(async (e) => {
             ids.push(e.token_id); 
         })
@@ -40,12 +38,11 @@ function MintedNft() {
     useEffect(async () => {
         const getUri = [...data];
         const tokenUriData = [...uriData];
-        const metadata = [...meta];
-
+        const metadata = [...meta]; 
         for (let index = 0; index < tokenid.length; index++) {
             const element = tokenid[index];
             const res = await covalent.getNftExternalMetadataForContract({
-                chainId: 80001,
+                chainId: 1666700000,
                 contractAddress: tokenAddres,
                 tokenId: element,
             })

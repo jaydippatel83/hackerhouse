@@ -97,14 +97,10 @@ export default function CreatePostModal() {
         const uri = dataUri._ipfs;
         const web3Modal = new Web3Modal();
         const connection = await web3Modal.connect();
-        const provider = new ethers.providers.Web3Provider(connection);
-
-        const signer = provider.getSigner();
-
-        let contract = new ethers.Contract(tokenAddres, TokenAbi.abi, signer);
-
-        let transaction = await contract.createToken(uri);
-
+        const provider = new ethers.providers.Web3Provider(connection); 
+        const signer = provider.getSigner(); 
+        let contract = new ethers.Contract(tokenAddres, TokenAbi.abi, signer); 
+        let transaction = await contract.createToken(uri); 
         let tx = await transaction.wait();
         let event = tx.events[0];
         let value = event.args[2];
