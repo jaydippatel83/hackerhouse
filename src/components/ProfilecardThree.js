@@ -92,7 +92,7 @@ function ProfilecardThree() {
                 <h4 className="fw-700 font-sm mt-2  pl-15">{ userName ? userName  : "username"}
                     <span className="fw-500 font-xssss text-grey-500 mt-1 mb-3 d-block">@{ userName ? userName  : "username"}</span>
                 </h4>
-                <h4 className="fw-700 font-sm mt-2  pl-15"> Super Points : {total}</h4>
+                <h4 className="fw-700 font-sm mt-2  pl-15"> HCK Points : {total}</h4>
                 <div className="d-flex align-items-center justify-content-center position-absolute-md right-15 top-0 me-2">
                     <EditProfile />
                     {/* <SendMsg /> */}

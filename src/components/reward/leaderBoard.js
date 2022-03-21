@@ -60,7 +60,7 @@ function LeaderBoard() {
                                                             style={{ minWidth: 170 }}
                                                             className='theme-dark-bg h4'
                                                         >
-                                                            Total SFS Points
+                                                            Total HCK Points
                                                         </TableCell>
                                                     </TableRow>
                                                 </TableHead>
