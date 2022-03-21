@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle"); 
-const HARMONY_PRIVATE_KEY = '0x4447a51eaaa911ffc387867dc26cf8b8119ac8d00d2cac4512c57a18b0a90d1a';
+const HARMONY_PRIVATE_KEY = process.env.REACT_APP_HARMONY_PRIVATE_KEY;
 
 module.exports = {
   solidity: "0.8.4",
